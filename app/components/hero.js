@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="hidden md:block md:w-1/2">
           <div className="hero-image">
             <img
-              src="/images/profile .jpg"
+              src="/images/Profile .jpg"
               alt="Hero Image"
               className="w-3/4 rounded-full "
             />
