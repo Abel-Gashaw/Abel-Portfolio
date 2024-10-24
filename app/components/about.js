@@ -1,18 +1,59 @@
-export default function About() {
-  return (
-    <section className="py-12 border-b border-gray-200" id="about">
-      <h2 className="text-3xl font-bold mb-6">About Me</h2>
-      <p className="mb-6 md:text-lg">
-        🚀 Full-Stack Developer with a passion for creating modern, reactive, and user-friendly web applications using cutting-edge technologies. I specialize in developing robust and scalable solutions that seamlessly integrate front-end and back-end technologies.
+// components/About.js
+const About = () => {
+    return (
+        <div className="about wow fadeInUp" id="about">
+            <div className="container mx-auto md:flex-row items-center py-6">
+                {/* <div className="md:w-1/2">
+                    <div className="about-img">
+                        <img src="/img/about.jpg" alt="About Image" className="w-full h-auto" />
+                    </div>
+                </div> */}
+                {/* <div className="md:w-1/2 md:pl-8"> */}
+                    {/* <div className="about-content"> */}
+                        <div className="section-header text-left mb-6">
+                            <p className="text-4xl font-semibold">Learn About Me</p>
+                          
+                        </div>
+                        <div className="about-text mb-6">
+  <p>
+    I am a passionate and experienced Web Designer, Web Developer, and Front-End Developer specializing in the MERN stack (MongoDB, Express.js, React, and Node.js). With a strong foundation in both back-end and front-end technologies, I create dynamic, responsive, and user-centric web applications.
+  </p>
+  <p>My expertise extends to:</p>
+  <ul className="list-disc ml-5">
+    <li><strong>Front-End Technologies:</strong> React, Next.js, Tailwind CSS, HTML, CSS for designing responsive, intuitive, and modern user interfaces.</li>
+    <li><strong>Node.js:</strong> For building fast, scalable server-side applications.</li>
+    <li><strong>MongoDB:</strong> For designing efficient, flexible databases.</li>
+    <li><strong>GitHub:</strong> For version control and seamless collaboration across teams.</li>
+    <li><strong>Testing & Deployment:</strong> Ensuring robust, bug-free solutions and smooth product launches.</li>
+    <li><strong>VB.NET:</strong> Developing powerful desktop applications, enhancing my versatility as a developer.</li>
+  </ul>
+  <p>
+    Whether it's designing a sleek UI, building an intuitive user experience, or architecting a complex back-end, I am driven by my commitment to delivering high-quality solutions that meet client and user needs. I am continuously learning and staying up-to-date with the latest technologies to ensure my work remains innovative and forward-thinking.
+  </p>
+</div>
 
-        💻 On the front-end, I excel in building responsive and intuitive user interfaces using React.js, Next.js, and state management tools like Redux. I'm proficient in modern web technologies including JavaScript, TypeScript, Tailwind CSS, and SASS, ensuring high-performance and visually appealing applications.
 
-        🔧 My back-end expertise includes Node.js for server-side applications, as well as ASP.NET and C# for .NET development. I have experience in designing efficient database schemas and implementing complex business logic.
+                        
+                        <a className="btn bg-red-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-4" href="">Learn More</a>
+                    {/* </div>
+                </div> */}
+            </div>
+        </div>
+    );
+};
 
-        🌐 I have a strong track record in developing large-scale web applications, ensuring cross-browser compatibility, and optimizing for various devices and platforms. My approach focuses on creating elegant, efficient, and robust designs that meet both user needs and business goals.
+const SkillBar = ({ skill, percentage }) => {
+    return (
+        <div className="mb-4">
+            <div className="flex justify-between">
+                <p>{skill}</p>
+                <p>{percentage}%</p>
+            </div>
+            <div className="progress bg-gray-200 rounded h-2">
+                <div className={`progress-bar bg-blue-500 h-full rounded`} style={{ width: `${percentage}%` }} role="progressbar" aria-valuenow={percentage} aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    );
+};
 
-        🔍 Constantly staying updated with the latest industry trends, I'm committed to delivering high-quality, maintainable code that drives business success and enhances user experience.
-      </p>
-    </section>
-  )
-}
+export default About;

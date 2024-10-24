@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin-top: 64px;
 }
 
 main {
@@ -20,7 +21,7 @@ main {
 :root {
   --background-color: #ffffff;
   --text-color: #000000;
-  --link-color: #1a73e8;
+  --link-color: black;
 }
 
 .dark-theme {
