@@ -32,12 +32,12 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:block md:w-1/2">
+        <div className=" md:block md:w-1/2">
           <div className="hero-image">
             <img
-              src="/images/profile .jpg"
+              src="/images/Profile .jpg"
               alt="Hero Image"
-              className="w-3/4 rounded-full "
+              className="md:w-3/4 p-10 rounded-full "
             />
           </div>
         </div>
